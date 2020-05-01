@@ -5,6 +5,7 @@ import com.example.demo.dto.SignUpDto;
 import com.example.demo.models.User;
 import com.example.demo.service.SignInUpService;
 //import com.example.demo.translater.LgTranslator;
+import com.example.demo.service.Status;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -27,34 +28,23 @@ public class SignInUpController {
     }
 
     @PostMapping("/signUp")
-    public String signUp(SignUpDto form) {
-        service.signUp(form);
-        return "redirect:/auth/signIn";
+    public String signUp(SignUpDto form, Model model) {
+        Status status = service.signUp(form);
+        if (status.getStatus()) {
+            return "redirect:/auth/signIn";
+        } else {
+            model.addAttribute("status", status);
+            model.addAttribute("email", form.getEmail());
+            model.addAttribute("password", form.getPassword());
+            model.addAttribute("password_repeat", form.getPasswordRepeat());
+            return "auth/sign_up";
+        }
+
     }
 
     @GetMapping("/signIn")
     public String getSignInPage(Model model) {
-//        model.addAttribute("user", new User());
         return "auth/sign_in";
     }
 
-//    @PostMapping("/signIn")
-//    public String signIn(SignInDto form) {
-//        service.signIn(form);
-//        return "redirect:/signUp";
-//    }
-
-//    @GetMapping("/trans")
-//    public String postTranslate() {
-//        LgTranslator tr = new LgTranslator();
-//        System.out.println(tr.print("Привет!",new Locale(Locale.ENGLISH.getLanguage())));
-//        return "trans";
-//    }
-
-//    @ResponseBody
-//    @RequestMapping(value = "/photo2", method = RequestMethod.GET, produces = MediaType.IMAGE_JPEG_VALUE)
-//    public byte[] testphoto() throws IOException {
-//        InputStream in = servletContext.getResourceAsStream("/images/no_image.jpg");
-//        return IOUtils.toByteArray(in);
-//    }
 }

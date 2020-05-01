@@ -7,6 +7,7 @@ import com.example.demo.mainModule.CoronaMonitorAppender;
 import com.example.demo.models.CountryInfo;
 import com.example.demo.models.User;
 import com.example.demo.repositories.CountryInfoRepository;
+import com.example.demo.service.MainService;
 import com.example.demo.service.SignInUpService;
 //import com.example.demo.translater.LgTranslator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +21,11 @@ import java.util.*;
 
 @Controller
 public class MainController {
-
-    @Autowired
-    private CountryInfoRepository countryInfoRepository;
-
     @Autowired
     CoronaMonitorAppender coronaMonitorAppender;
+
+    @Autowired
+    private MainService mainService;
 
     @GetMapping("/result/{message}")
     public String result(Model model, @PathVariable("message") String message) {
@@ -45,21 +45,17 @@ public class MainController {
 
     @GetMapping("/corona_monitor")
     public String coronaMonitor(Model model) {
-//        List<CountryInfo> elems = countryInfoRepository.findAll();
-        List<CountryInfo> elems = countryInfoRepository.findAllCountryInfo();
-        elems.sort((o1, o2) -> o2.getInfected().compareTo(o1.getInfected()));
-        model.addAttribute("elems",elems);
-        return"main/corona_monitor";
-//        https://coronavirus-monitor.info/
-//        https://coronavirus-monitor.ru/
-        }
-
-        @GetMapping("/corona_monitor/get_table")
-        public String coronaMonitorGetTable (Model model){
-            List<String> elems = new ArrayList<>();
-            model.addAttribute("elems", elems);
-            return "main/corona_monitor";
-        }
-
-
+        List<CountryInfo> elems = mainService.coronaMonitor();
+        model.addAttribute("elems", elems);
+        return "main/corona_monitor";
     }
+
+    @GetMapping("/corona_monitor/get_table")
+    public String coronaMonitorGetTable(Model model) {
+        List<String> elems = new ArrayList<>();
+        model.addAttribute("elems", elems);
+        return "main/corona_monitor";
+    }
+
+
+}

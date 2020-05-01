@@ -18,7 +18,7 @@ public class CoronaMonitorAppender {
     @Autowired
     private CountryInfoRepository countryInfoRepository;
 
-//    @Scheduled( initialDelay = 60 * 1000, fixedDelay = 60 * 1000)
+    @Scheduled( initialDelay = 60 * 1000, fixedDelay = 60 * 1000)
     public void createOrUpdateCountriesInfo() {
         List<CountryInfo> countryInfos = getCountriesInfo();
         updateBd(countryInfos);

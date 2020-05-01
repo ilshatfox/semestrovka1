@@ -10,7 +10,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.nio.file.FileAlreadyExistsException;
 import java.util.Optional;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 //import com.example.demo.dto.*;
 
 @Component
@@ -27,32 +30,31 @@ public class SignInUpServiceImpl implements SignInUpService {
 
 
     @Override
-    public void signUp(SignUpDto form) {
-        System.out.println("fff" + form.getEmail() + "\n" + form.getPassword() + "\n" + form.getPasswordRepeat());
-        System.out.println(passwordEncoder.encode(form.getPassword()));
-        User user = User.builder()
-                .email(form.getEmail())
-                .password(passwordEncoder.encode(form.getPassword()))
-                .passwordRepeat(passwordEncoder.encode(form.getPasswordRepeat()))
-                .role(Role.USER)
-                .build();
+    public Status signUp(SignUpDto form) {
+        Optional<User> oldUser = usersRepository.findUserByEmail(form.getEmail());
+        if (!oldUser.isPresent()) {
+            Pattern pattern = Pattern.compile("[^@\\.]*?@[^\\.]*?\\.[^\\.]*?");
+            Matcher matcher = pattern.matcher(form.getEmail());
+            if (!matcher.find()) {
+                return new Status(false, "Email неверный!");
+            }
+            else if (form.getPasswordRepeat().equals(form.getPassword())) {
+                User user = User.builder()
+                        .email(form.getEmail())
+                        .password(passwordEncoder.encode(form.getPassword()))
+                        .passwordRepeat(passwordEncoder.encode(form.getPasswordRepeat()))
+                        .role(Role.USER)
+                        .build();
+                userDao.saveUser(user);
+                return new Status(true, "Успешно зарегистрирован!");
+            } else {
+                return new Status(false,"Пароли не совпадают!");
+            }
 
-//        User user = new User(form.getLogin(), )
+        } else {
+            return new Status(false,"Такой email уже используется!");
+        }
 
-//         usersRepository.save(user);
-        userDao.saveUser(user);
     }
-
-//    @Override
-//    public void signIn(SignInDto form) {
-//        Optional<User> user = usersRepository.findByEmail(form.getEmail());
-//        System.out.println("user" + user.isPresent() + " " + user);
-//        if (user.isPresent()) {
-//            User user1 = user.get();
-//            if (user1.getPassword().equals(form.getPassword())) {
-//
-//            }
-//        }
-//    }
 }
 

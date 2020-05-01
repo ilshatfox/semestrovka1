@@ -3,7 +3,7 @@
 {% block block2 %}
     <div>{{ news_path }}/{{ elem.filename}}</div>
 
-    <img src="/news_path/{{ elem.filename}}" alt="альтернативный текст" />
+    <img src="{{ elem.fileUrl }}" alt="альтернативный текст" />
 
 
 {% endblock %}

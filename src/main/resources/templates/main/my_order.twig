@@ -11,8 +11,8 @@
             <li>Количество: {{ order.orderAmount }}</li>
             <li>Указанный телефон: {{ order.phone }}</li>
         </ul>
-        <a href="/my_orders/edit/{{ order.id }}"><button class="btn btn-dark">Изменить</button></a>
-        <form action="/my_orders/delete_order/{{ order.id }}" method="post">
+        <a href="/my_orders/edit/{{ order.id }}" style="margin-right: 30px"><button class="btn btn-dark" style="margin-right: 30px">Изменить</button></a>
+        <form action="/my_orders/delete_order/{{ order.id }}" method="post" style="display:inline;float:right">
             <button type="submit" class="btn btn-dark">Удалить</button>
         </form>
     </div>

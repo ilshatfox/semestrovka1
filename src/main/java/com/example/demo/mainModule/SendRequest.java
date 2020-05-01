@@ -5,13 +5,9 @@ import com.jsunsoft.http.HttpRequestBuilder;
 import com.jsunsoft.http.ResponseDeserializer;
 import com.jsunsoft.http.ResponseHandler;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
 public class SendRequest {
     public static void main(String[] args) {
-        String req = send("https://coronavirus-monitor.ru/ru/novosti");
-        System.out.println(req);
+        System.out.println(send("https://coronavirus-monitor.ru/ru/novosti/v-kommunarke-u-zarazhennyh-koronavirusom-nashli-novyi-simptom"));
 
     }
 

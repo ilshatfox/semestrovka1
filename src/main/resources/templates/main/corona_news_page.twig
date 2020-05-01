@@ -1,13 +1,52 @@
 {% extends 'base_buttons' %}
 
+{% block head1 %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+{% endblock %}
+
 {% block block2 %}
     {% for elem in news_list %}
-        {{ elem.name }}
-        {{ elem.text }}
+        <div class="container">
+            <figure style="text-align: center">
+                <h5>{{ elem.name }}</h5>
+                <img src="{{ elem.fileUrl }}" alt="альтернативный текст" height="300px" width="500px" />
+                {#            <div>{{ elem.name }}</div>#}
+                <div>{{ elem.text }}</div>
+                <a href="{{ elem.originalUrl }}"><div>Подробнее</div></a>
+            </figure>
+        </div>
     {% endfor %}
-{#    <div>{{ news_path }}/{{ elem.filename}}</div>#}
+    <div id="main_element"></div>
+{% endblock %}
 
-{#    <img src="/news_path/{{ elem.filename}}" alt="альтернативный текст" />#}
+{% block block3 %}
+    <script>
 
+        var page_num = 0;
+        function myFunc() {
+            var bottom = document.documentElement.clientHeight + window.pageYOffset;
+            if (Number(bottom + 150) >= Number(document.body.scrollHeight)) {
+                myFunc2();
+            }
+        }
 
+        function myFunc2() {
+            page_num += 1;
+            // alert("fff");
+            $.get( "/corona_news/page_add/" + page_num, function( data ) {
+                if (data == "") {
+                    page_num -= 1;
+                }
+                var elem = document.getElementById('main_element');
+                elem.insertAdjacentHTML("beforeBegin", data);
+            });
+        }
+
+        // myFunc2();
+        // myFunc2();
+        window.addEventListener('scroll', function() {
+            myFunc();
+        });
+
+    </script>
 {% endblock %}

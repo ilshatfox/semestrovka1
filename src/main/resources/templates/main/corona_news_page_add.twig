@@ -1,0 +1,13 @@
+{% for elem in news_list %}
+    <div class="container">
+        <figure style="text-align: center">
+            <h5>{{ elem.name }}</h5>
+            <img src="{{ elem.fileUrl }}" alt="альтернативный текст" height="300px" width="500px"/>
+            {#            <div>{{ elem.name }}</div>#}
+            <div>{{ elem.text }}</div>
+            <a href="{{ elem.originalUrl }}">
+                <div>Подробнее</div>
+            </a>
+        </figure>
+    </div>
+{% endfor %}

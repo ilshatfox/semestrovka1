@@ -19,7 +19,7 @@ import javax.validation.constraints.Size;
 @Builder
 @Entity
 @Table(name = "news_info")
-public class News {
+public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -33,7 +33,11 @@ public class News {
     private String text;
 
     @NotNull
-    @Size(min = 4, max = 20)
-    private String filename;
+    @Size(min = 4, max = 1000)
+    private String fileUrl;
+
+    @NotNull
+    @Size(min = 4, max = 10000)
+    private String originalUrl;
 
 }

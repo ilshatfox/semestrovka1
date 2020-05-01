@@ -37,6 +37,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/css/**").permitAll()
                 .antMatchers("/js/**").permitAll()
                 .antMatchers("/auth/signIn").permitAll()
+                .antMatchers("/corona_news/page_add/**").permitAll()
                 .antMatchers("/auth/signUp").permitAll().anyRequest().authenticated().and();
         http.formLogin().loginPage("/auth/signIn").
                 usernameParameter("email").
