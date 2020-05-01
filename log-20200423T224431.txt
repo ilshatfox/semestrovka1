@@ -1,0 +1,497 @@
+o.s.b.c.l.ClasspathLoggingApplicationListener - Application started with classpath: [file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/deploy.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/cldrdata.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/dnsns.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/jaccess.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/jfxrt.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/localedata.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/nashorn.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunec.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/zipfs.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/javaws.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfxswt.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/management-agent.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/plugin.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/ant-javafx.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/dt.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/javafx-mx.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/jconsole.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/packager.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/sa-jdi.jar, file:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/tools.jar, file:/Users/ilsat/myFiles/itis/4%20sem/demo3/target/classes/, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-freemarker/2.2.4.RELEASE/spring-boot-starter-freemarker-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter/2.2.4.RELEASE/spring-boot-starter-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.2.4.RELEASE/spring-boot-autoconfigure-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-core/5.2.3.RELEASE/spring-core-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-jcl/5.2.3.RELEASE/spring-jcl-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar, file:/Users/ilsat/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-context-support/5.2.3.RELEASE/spring-context-support-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-beans/5.2.3.RELEASE/spring-beans-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.2.4.RELEASE/spring-boot-starter-web-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.2.4.RELEASE/spring-boot-starter-json-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.2.4.RELEASE/spring-boot-starter-tomcat-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.30/tomcat-embed-core-9.0.30.jar, file:/Users/ilsat/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.30/tomcat-embed-el-9.0.30.jar, file:/Users/ilsat/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.30/tomcat-embed-websocket-9.0.30.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.2.4.RELEASE/spring-boot-starter-validation-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar, file:/Users/ilsat/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.18.Final/hibernate-validator-6.0.18.Final.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-web/5.2.3.RELEASE/spring-web-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-webmvc/5.2.3.RELEASE/spring-webmvc-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-expression/5.2.3.RELEASE/spring-expression-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.2.4.RELEASE/spring-boot-starter-data-jpa-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.2.4.RELEASE/spring-boot-starter-jdbc-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/com/zaxxer/HikariCP/3.4.2/HikariCP-3.4.2.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-jdbc/5.2.3.RELEASE/spring-jdbc-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar, file:/Users/ilsat/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar, file:/Users/ilsat/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar, file:/Users/ilsat/.m2/repository/org/hibernate/hibernate-core/5.4.10.Final/hibernate-core-5.4.10.Final.jar, file:/Users/ilsat/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar, file:/Users/ilsat/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar, file:/Users/ilsat/.m2/repository/net/bytebuddy/byte-buddy/1.10.6/byte-buddy-1.10.6.jar, file:/Users/ilsat/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar, file:/Users/ilsat/.m2/repository/org/jboss/jandex/2.1.1.Final/jandex-2.1.1.Final.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar, file:/Users/ilsat/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar, file:/Users/ilsat/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar, file:/Users/ilsat/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar, file:/Users/ilsat/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar, file:/Users/ilsat/.m2/repository/org/glassfish/jaxb/txw2/2.3.2/txw2-2.3.2.jar, file:/Users/ilsat/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.8/istack-commons-runtime-3.0.8.jar, file:/Users/ilsat/.m2/repository/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar, file:/Users/ilsat/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.16/FastInfoset-1.2.16.jar, file:/Users/ilsat/.m2/repository/org/springframework/data/spring-data-jpa/2.2.4.RELEASE/spring-data-jpa-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/data/spring-data-commons/2.2.4.RELEASE/spring-data-commons-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-orm/5.2.3.RELEASE/spring-orm-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-tx/5.2.3.RELEASE/spring-tx-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-aspects/5.2.3.RELEASE/spring-aspects-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.2.4.RELEASE/spring-boot-starter-aop-2.2.4.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/springframework/spring-aop/5.2.3.RELEASE/spring-aop-5.2.3.RELEASE.jar, file:/Users/ilsat/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar, file:/Users/ilsat/.m2/repository/org/postgresql/postgresql/42.2.9/postgresql-42.2.9.jar, file:/Users/ilsat/.m2/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar, file:/Users/ilsat/.m2/repository/com/jsunsoft/http/http-request/0.0.5/http-request-0.0.5.jar, file:/Users/ilsat/.m2/repository/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10.jar, file:/Users/ilsat/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar, file:/Users/ilsat/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.2/jackson-databind-2.10.2.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.2/jackson-core-2.10.2.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.2/jackson-annotations-2.10.2.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.10.2/jackson-dataformat-xml-2.10.2.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.10.2/jackson-module-jaxb-annotations-2.10.2.jar, file:/Users/ilsat/.m2/repository/org/codehaus/woodstox/stax2-api/4.2/stax2-api-4.2.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.0.3/woodstox-core-6.0.3.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.2/jackson-module-parameter-names-2.10.2.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.2/jackson-datatype-jdk8-2.10.2.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.10.2/jackson-datatype-joda-2.10.2.jar, file:/Users/ilsat/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.2/jackson-datatype-jsr310-2.10.2.jar, file:/Users/ilsat/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar, file:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.2.6.RELEASE/spring-boot-starter-logging-2.2.6.RELEASE.jar, file:/Users/ilsat/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar, file:/Users/ilsat/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar, file:/Users/ilsat/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.12.1/log4j-to-slf4j-2.12.1.jar, file:/Users/ilsat/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar, file:/Users/ilsat/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar, file:/Applications/IntelliJ%20IDEA.app/Contents/lib/idea_rt.jar]
+com.example.demo.DemoApplication - Starting DemoApplication on MacBook-Air-Ilsat.local with PID 59753 (started by ilsat in /Users/ilsat/myFiles/itis/4 sem/demo3)
+com.example.demo.DemoApplication - Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+o.s.boot.SpringApplication - Loading source class com.example.demo.DemoApplication
+o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+o.s.b.c.c.ConfigFileApplicationListener - Loaded config file 'file:/Users/ilsat/myFiles/itis/4%20sem/demo3/target/classes/application.properties' (classpath:/application.properties)
+o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e005c4b
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/asp/MyAnnotAspect.class]
+o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/asp/MyAspect.class]
+o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/controllers/SignUpController.class]
+o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/dto/UserDaoImpl.class]
+o.s.c.a.ClassPathBeanDefinitionScanner - Ignored because not a concrete top-level class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/repositories/UsersRepository.class]
+o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/service/SignUpServiceImpl.class]
+o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.application.admin.enabled' in PropertySource 'configurationProperties' with value of type String
+o.s.c.e.PropertySourcesPropertyResolver - Found key 'spring.jmx.enabled' in PropertySource 'configurationProperties' with value of type String
+o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+o.s.b.a.AutoConfigurationPackages - @EnableAutoConfiguration was declared on a class in the package 'com.example.demo'. Automatic @Repository and @Entity scanning is enabled.
+o.s.d.r.c.RepositoryConfigurationDelegate - Scanning for JPA repositories in packages com.example.demo.
+o.s.d.r.c.RepositoryComponentProvider - Identified candidate component class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/repositories/UsersRepository.class]
+o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/dto/UserDaoImpl.class]
+o.s.c.a.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes/com/example/demo/service/SignUpServiceImpl.class]
+o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75ms. Found 1 JPA repository interfaces.
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertySourcesPlaceholderConfigurer'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'emBeanDefinitionRegistrarPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinderFactory'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'methodValidationPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'methodValidationPostProcessor' via factory method to bean named 'environment'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSourceInitializerPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'persistenceExceptionTranslationPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'persistenceExceptionTranslationPostProcessor' via factory method to bean named 'environment'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'webServerFactoryCustomizerBeanPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'errorPageRegistrarBeanPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSourceInitializedPublisher'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'projectingArgumentResolverBeanPostProcessor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration'
+o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public java.lang.Object com.example.demo.asp.MyAnnotAspect.arroundCallAt(org.aspectj.lang.ProceedingJoinPoint) throws java.lang.Throwable
+o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void com.example.demo.asp.MyAspect.beforeCallService(org.aspectj.lang.JoinPoint)
+o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void com.example.demo.asp.MyAspect.afterCallService(org.aspectj.lang.JoinPoint)
+o.s.a.a.a.ReflectiveAspectJAdvisorFactory - Found AspectJ method: public void com.example.demo.asp.MyAspect.afterThrowingExc(java.lang.Throwable) throws java.lang.Throwable
+o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionAttributeSource'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'transactionInterceptor'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'transactionInterceptor' via factory method to bean named 'transactionAttributeSource'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionAttributeSource'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.transaction.config.internalTransactionAdvisor' via factory method to bean named 'transactionInterceptor'
+o.s.u.c.s.UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@680362a]
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tomcatServletWebServerFactory'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'websocketServletWebServerCustomizer'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'servletWebServerFactoryCustomizer'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'servletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tomcatServletWebServerFactoryCustomizer'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tomcatServletWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'tomcatWebServerFactoryCustomizer'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration$TomcatWebServerFactoryCustomizerConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'environment'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'tomcatWebServerFactoryCustomizer' via factory method to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'errorPageCustomizer'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dispatcherServletRegistration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dispatcherServlet'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'spring.http-org.springframework.boot.autoconfigure.http.HttpProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'dispatcherServlet'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'dispatcherServletRegistration' via factory method to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'multipartConfigElement'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration' via constructor to bean named 'spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'errorPageCustomizer' via factory method to bean named 'dispatcherServletRegistration'
+o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /Users/ilsat/.m2/repository/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar
+o.s.b.w.e.t.TomcatServletWebServerFactory - Code archive: /Users/ilsat/.m2/repository/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar
+o.s.b.w.e.t.TomcatServletWebServerFactory - None of the document roots [src/main/webapp, public, static] point to a directory and will be ignored.
+o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+o.a.catalina.core.StandardService - Starting service [Tomcat]
+o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3836 ms
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'requestContextFilter'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'formContentFilter'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'characterEncodingFilter'
+o.s.b.w.s.ServletContextInitializerBeans - Mapping filters: characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+o.s.b.w.s.ServletContextInitializerBeans - Mapping servlets: dispatcherServlet urls=[/]
+o.s.b.w.s.f.OrderedRequestContextFilter - Filter 'requestContextFilter' configured for use
+o.s.b.w.s.f.OrderedCharacterEncodingFilter - Filter 'characterEncodingFilter' configured for use
+o.s.b.w.s.f.OrderedFormContentFilter - Filter 'formContentFilter' configured for use
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'entityManagerFactory'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSource'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'dataSource' via factory method to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+com.zaxxer.hikari.HikariConfig - Driver class org.postgresql.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.jdbc.DataSourceInitializerInvoker' via constructor to bean named 'org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e005c4b'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'dataSource'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@193f604a'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration' via constructor to bean named 'spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'hikariPoolDataSourceMetadataProvider'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'entityManagerFactoryBuilder'
+o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'jpaVendorAdapter'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'entityManagerFactoryBuilder' via factory method to bean named 'jpaVendorAdapter'
+o.s.b.f.s.DefaultListableBeanFactory - Autowiring by type from bean name 'entityManagerFactory' via factory method to bean named 'entityManagerFactoryBuilder'
+o.s.o.j.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+o.h.jpa.internal.util.LogHelper - PersistenceUnitInfo [
+	name: default
+	persistence provider classname: null
+	classloader: sun.misc.Launcher$AppClassLoader@18b4aac2
+	excludeUnlistedClasses: true
+	JTA datasource: null
+	Non JTA datasource: HikariDataSource (null)
+	Transaction type: RESOURCE_LOCAL
+	PU root URL: file:/Users/ilsat/myFiles/itis/4%20sem/demo3/target/classes/
+	Shared Cache Mode: UNSPECIFIED
+	Validation Mode: AUTO
+	Jar files URLs []
+	Managed classes names [
+		com.example.demo.models.User]
+	Mapping files names []
+	Properties []
+o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+org.hibernate.Version - HHH000412: Hibernate Core {5.4.10.Final}
+org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+o.h.c.i.RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4e1ce44
+o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4e1ce44
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4e1ce44
+o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@5853495b
+o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@332820f4
+o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@53a9fcfd
+o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2dfe5525
+o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@2dfe5525
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@2dfe5525
+o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@43d38654
+o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@43d38654
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@43d38654
+o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@710d89e2
+o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@710d89e2
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@710d89e2
+o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@1b9776f5
+o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@1b9776f5
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@1b9776f5
+o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@67a3bd51
+o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@67a3bd51
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@67a3bd51
+o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5c534b5b
+o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@5c534b5b
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@5c534b5b
+o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@14229fa7
+o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@14229fa7
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@14229fa7
+o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@3936df72
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@3936df72
+o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@42714a7
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@42714a7
+o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@f679798
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@f679798
+o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@53ed09e8
+o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@7fd8c559
+o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@18acfe88
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@18acfe88
+o.hibernate.type.BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.DurationType@481e91b6
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@481e91b6
+o.hibernate.type.BasicTypeRegistry - Adding type registration Instant -> org.hibernate.type.InstantType@7e2c64
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7e2c64
+o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@41b1f51e
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@41b1f51e
+o.hibernate.type.BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@7efe7b87
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@7efe7b87
+o.hibernate.type.BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6b8280e6
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6b8280e6
+o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@15dc339f
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@15dc339f
+o.hibernate.type.BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@718dbd79
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@718dbd79
+o.hibernate.type.BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@64469d8
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@64469d8
+o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@27df0f3d
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@27df0f3d
+o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@3cb8c8ce
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@3cb8c8ce
+o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@1317b708
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@1317b708
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@1317b708
+o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@4f5f6e45
+o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@79316f3a
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@79316f3a
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@79316f3a
+o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@329a1f8d
+o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@7569ea63
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7569ea63
+o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@10358c32
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@10358c32
+o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@2042ccce
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2042ccce
+o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@382c90c2
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@382c90c2
+o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@31ceba99
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@31ceba99
+o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@6ff6efdc
+o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@74d3b638
+o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@74d3b638
+o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@74d3b638
+o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@29f85fe1
+o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@29f85fe1
+o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@29f85fe1
+o.hibernate.type.BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.RowVersionType@5f117b3d
+o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@1866da85
+o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@987455b
+o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@987455b
+o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@987455b
+o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@13275d8
+o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@13275d8
+o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@13275d8
+o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@574cd322
+o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@a7ad6e5
+o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@1debc91c
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1debc91c
+o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6ec7bce0
+o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6b69761b
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6b69761b
+o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@3e47a03
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@3e47a03
+o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@7dd611c8
+o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@6a937336
+o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@3f4f5330
+o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@1894593a
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@1894593a
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@7cea0110
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@468dda3e
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5527b211
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@54cf7c6a
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@78010562
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@50756c76
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@38aafb53
+o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1729ec00
+o.h.b.internal.BootstrapContextImpl - Injecting JPA temp ClassLoader [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@17c2d509] into BootstrapContext; was [null]
+o.h.b.i.ClassLoaderAccessImpl - ClassLoaderAccessImpl#injectTempClassLoader(org.springframework.instrument.classloading.SimpleThrowawayClassLoader@17c2d509) [was null]
+o.h.b.internal.BootstrapContextImpl - Injecting ScanEnvironment [org.hibernate.jpa.boot.internal.StandardJpaScanEnvironmentImpl@782be4eb] into BootstrapContext; was [null]
+o.h.b.internal.BootstrapContextImpl - Injecting ScanOptions [org.hibernate.boot.archive.scan.internal.StandardScanOptions@38792286] into BootstrapContext; was [org.hibernate.boot.archive.scan.internal.StandardScanOptions@34d4860f]
+o.h.b.internal.BootstrapContextImpl - Injecting JPA temp ClassLoader [null] into BootstrapContext; was [org.springframework.instrument.classloading.SimpleThrowawayClassLoader@17c2d509]
+o.h.b.i.ClassLoaderAccessImpl - ClassLoaderAccessImpl#injectTempClassLoader(null) [was org.springframework.instrument.classloading.SimpleThrowawayClassLoader@17c2d509]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+com.zaxxer.hikari.HikariConfig - HikariPool-1 - configuration:
+com.zaxxer.hikari.HikariConfig - allowPoolSuspension.............false
+com.zaxxer.hikari.HikariConfig - autoCommit......................true
+com.zaxxer.hikari.HikariConfig - catalog.........................none
+com.zaxxer.hikari.HikariConfig - connectionInitSql...............none
+com.zaxxer.hikari.HikariConfig - connectionTestQuery.............none
+com.zaxxer.hikari.HikariConfig - connectionTimeout...............30000
+com.zaxxer.hikari.HikariConfig - dataSource......................none
+com.zaxxer.hikari.HikariConfig - dataSourceClassName.............none
+com.zaxxer.hikari.HikariConfig - dataSourceJNDI..................none
+com.zaxxer.hikari.HikariConfig - dataSourceProperties............{password=<masked>}
+com.zaxxer.hikari.HikariConfig - driverClassName................."org.postgresql.Driver"
+com.zaxxer.hikari.HikariConfig - healthCheckProperties...........{}
+com.zaxxer.hikari.HikariConfig - healthCheckRegistry.............none
+com.zaxxer.hikari.HikariConfig - idleTimeout.....................600000
+com.zaxxer.hikari.HikariConfig - initializationFailTimeout.......1
+com.zaxxer.hikari.HikariConfig - isolateInternalQueries..........false
+com.zaxxer.hikari.HikariConfig - jdbcUrl.........................jdbc:postgresql://localhost:5432/test_database
+com.zaxxer.hikari.HikariConfig - leakDetectionThreshold..........0
+com.zaxxer.hikari.HikariConfig - maxLifetime.....................1800000
+com.zaxxer.hikari.HikariConfig - maximumPoolSize.................10
+com.zaxxer.hikari.HikariConfig - metricRegistry..................none
+com.zaxxer.hikari.HikariConfig - metricsTrackerFactory...........none
+com.zaxxer.hikari.HikariConfig - minimumIdle.....................10
+com.zaxxer.hikari.HikariConfig - password........................<masked>
+com.zaxxer.hikari.HikariConfig - poolName........................"HikariPool-1"
+com.zaxxer.hikari.HikariConfig - readOnly........................false
+com.zaxxer.hikari.HikariConfig - registerMbeans..................false
+com.zaxxer.hikari.HikariConfig - scheduledExecutor...............none
+com.zaxxer.hikari.HikariConfig - schema..........................none
+com.zaxxer.hikari.HikariConfig - threadFactory...................internal
+com.zaxxer.hikari.HikariConfig - transactionIsolation............default
+com.zaxxer.hikari.HikariConfig - username........................"test_user"
+com.zaxxer.hikari.HikariConfig - validationTimeout...............5000
+com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4c6007fb
+com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : PostgreSQL
+    version : 11.5
+      major : 11
+      minor : 5
+o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.2.9
+      major : 42
+      minor : 2
+o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.2
+org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=1, active=1, idle=0, waiting=0)
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@54d532c
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@b8aadf5
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@fb5385c
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4ab7a7ce
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@250c5987
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7b37add6
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5d660d34
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2a985881
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6d9ffc34
+com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+o.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@376c7d7d
+o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@376c7d7d
+o.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@31ceba99
+o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@43a65cd8] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3f1ef9d6]
+org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.example.demo.models.User
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+o.h.cfg.annotations.EntityBinder - Import with entity name User
+o.h.cfg.annotations.EntityBinder - Bind entity com.example.demo.models.User on table user_info
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=id, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.models.User:id]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+o.h.cfg.annotations.PropertyBinder - Building property id
+org.hibernate.cfg.BinderHelper - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=login, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property login with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.models.User:login]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for login
+o.h.cfg.annotations.PropertyBinder - Building property login
+org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(user_info), mappingColumn=password, insertable=true, updatable=true, unique=false}
+o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property password with lazy=false
+o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.example.demo.models.User:password]
+o.h.c.annotations.SimpleValueBinder - building SimpleValue for password
+o.h.cfg.annotations.PropertyBinder - Building property password
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for login
+o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for password
+org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [user_info]
+o.h.internal.SessionFactoryImpl - Building session factory
+org.hibernate.cfg.Settings - SessionFactory name : null
+org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): enabled
+org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+org.hibernate.cfg.Settings - Statistics: disabled
+org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+org.hibernate.cfg.Settings - Default entity-mode: pojo
+org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+org.hibernate.cfg.Settings - Default batch fetch size: -1
+org.hibernate.cfg.Settings - Maximum outer join fetch depth: null
+org.hibernate.cfg.Settings - Default null ordering: NONE
+org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+org.hibernate.cfg.Settings - Query language substitutions: {}
+org.hibernate.cfg.Settings - Named query checking : enabled
+org.hibernate.cfg.Settings - Second-level cache: disabled
+org.hibernate.cfg.Settings - Second-level query cache: disabled
+org.hibernate.cfg.Settings - Second-level query cache factory: null
+org.hibernate.cfg.Settings - Second-level cache region prefix: null
+org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+org.hibernate.cfg.Settings - JDBC batch size: 15
+org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+org.hibernate.cfg.Settings - Scrollable result sets: enabled
+org.hibernate.cfg.Settings - Wrap result sets: disabled
+org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+org.hibernate.cfg.Settings - JDBC result set fetch size: null
+org.hibernate.cfg.Settings - Connection release mode: ON_CLOSE
+org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+org.hibernate.cfg.Settings - JPA compliance - query : disabled
+org.hibernate.cfg.Settings - JPA compliance - closed-handling : disabled
+org.hibernate.cfg.Settings - JPA compliance - lists : disabled
+org.hibernate.cfg.Settings - JPA compliance - transactions : disabled
+o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, hibernate.id.new_generator_mappings=true, java.specification.version=1.8, file.encoding.pkg=sun.io, sun.cpu.isalist=, hibernate.resource.beans.container=org.springframework.orm.hibernate5.SpringBeanContainer@4ecd00b5, hibernate.connection.handling_mode=DELAYED_ACQUISITION_AND_HOLD, sun.jnu.encoding=UTF-8, hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy, java.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/lib/tools.jar:/Users/ilsat/myFiles/itis/4 sem/demo3/target/classes:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-freemarker/2.2.4.RELEASE/spring-boot-starter-freemarker-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter/2.2.4.RELEASE/spring-boot-starter-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot/2.2.4.RELEASE/spring-boot-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.2.4.RELEASE/spring-boot-autoconfigure-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/ilsat/.m2/repository/org/springframework/spring-core/5.2.3.RELEASE/spring-core-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/spring-jcl/5.2.3.RELEASE/spring-jcl-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/yaml/snakeyaml/1.25/snakeyaml-1.25.jar:/Users/ilsat/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/Users/ilsat/.m2/repository/org/springframework/spring-context-support/5.2.3.RELEASE/spring-context-support-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/spring-beans/5.2.3.RELEASE/spring-beans-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/spring-context/5.2.3.RELEASE/spring-context-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-web/2.2.4.RELEASE/spring-boot-starter-web-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-json/2.2.4.RELEASE/spring-boot-starter-json-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/2.2.4.RELEASE/spring-boot-starter-tomcat-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/9.0.30/tomcat-embed-core-9.0.30.jar:/Users/ilsat/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/9.0.30/tomcat-embed-el-9.0.30.jar:/Users/ilsat/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.30/tomcat-embed-websocket-9.0.30.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-validation/2.2.4.RELEASE/spring-boot-starter-validation-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/ilsat/.m2/repository/org/hibernate/validator/hibernate-validator/6.0.18.Final/hibernate-validator-6.0.18.Final.jar:/Users/ilsat/.m2/repository/org/springframework/spring-web/5.2.3.RELEASE/spring-web-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/spring-webmvc/5.2.3.RELEASE/spring-webmvc-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/spring-expression/5.2.3.RELEASE/spring-expression-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/2.2.4.RELEASE/spring-boot-starter-data-jpa-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/2.2.4.RELEASE/spring-boot-starter-jdbc-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/com/zaxxer/HikariCP/3.4.2/HikariCP-3.4.2.jar:/Users/ilsat/.m2/repository/org/springframework/spring-jdbc/5.2.3.RELEASE/spring-jdbc-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.1/jakarta.activation-api-1.2.1.jar:/Users/ilsat/.m2/repository/jakarta/persistence/jakarta.persistence-api/2.2.3/jakarta.persistence-api-2.2.3.jar:/Users/ilsat/.m2/repository/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/Users/ilsat/.m2/repository/org/hibernate/hibernate-core/5.4.10.Final/hibernate-core-5.4.10.Final.jar:/Users/ilsat/.m2/repository/org/jboss/logging/jboss-logging/3.4.1.Final/jboss-logging-3.4.1.Final.jar:/Users/ilsat/.m2/repository/org/javassist/javassist/3.24.0-GA/javassist-3.24.0-GA.jar:/Users/ilsat/.m2/repository/net/bytebuddy/byte-buddy/1.10.6/byte-buddy-1.10.6.jar:/Users/ilsat/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar:/Users/ilsat/.m2/repository/org/jboss/jandex/2.1.1.Final/jandex-2.1.1.Final.jar:/Users/ilsat/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/ilsat/.m2/repository/org/dom4j/dom4j/2.1.1/dom4j-2.1.1.jar:/Users/ilsat/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.0.Final/hibernate-commons-annotations-5.1.0.Final.jar:/Users/ilsat/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar:/Users/ilsat/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.2/jakarta.xml.bind-api-2.3.2.jar:/Users/ilsat/.m2/repository/org/glassfish/jaxb/txw2/2.3.2/txw2-2.3.2.jar:/Users/ilsat/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.8/istack-commons-runtime-3.0.8.jar:/Users/ilsat/.m2/repository/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar:/Users/ilsat/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.16/FastInfoset-1.2.16.jar:/Users/ilsat/.m2/repository/org/springframework/data/spring-data-jpa/2.2.4.RELEASE/spring-data-jpa-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/data/spring-data-commons/2.2.4.RELEASE/spring-data-commons-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/spring-orm/5.2.3.RELEASE/spring-orm-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/spring-tx/5.2.3.RELEASE/spring-tx-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/ilsat/.m2/repository/org/springframework/spring-aspects/5.2.3.RELEASE/spring-aspects-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-aop/2.2.4.RELEASE/spring-boot-starter-aop-2.2.4.RELEASE.jar:/Users/ilsat/.m2/repository/org/springframework/spring-aop/5.2.3.RELEASE/spring-aop-5.2.3.RELEASE.jar:/Users/ilsat/.m2/repository/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar:/Users/ilsat/.m2/repository/org/postgresql/postgresql/42.2.9/postgresql-42.2.9.jar:/Users/ilsat/.m2/repository/org/projectlombok/lombok/1.18.10/lombok-1.18.10.jar:/Users/ilsat/.m2/repository/com/jsunsoft/http/http-request/0.0.5/http-request-0.0.5.jar:/Users/ilsat/.m2/repository/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10.jar:/Users/ilsat/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/ilsat/.m2/repository/commons-codec/commons-codec/1.13/commons-codec-1.13.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.2/jackson-databind-2.10.2.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.2/jackson-core-2.10.2.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.2/jackson-annotations-2.10.2.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.10.2/jackson-dataformat-xml-2.10.2.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.10.2/jackson-module-jaxb-annotations-2.10.2.jar:/Users/ilsat/.m2/repository/org/codehaus/woodstox/stax2-api/4.2/stax2-api-4.2.jar:/Users/ilsat/.m2/repository/com/fasterxml/woodstox/woodstox-core/6.0.3/woodstox-core-6.0.3.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.10.2/jackson-module-parameter-names-2.10.2.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.10.2/jackson-datatype-jdk8-2.10.2.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-joda/2.10.2/jackson-datatype-joda-2.10.2.jar:/Users/ilsat/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.10.2/jackson-datatype-jsr310-2.10.2.jar:/Users/ilsat/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/ilsat/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.2.6.RELEASE/spring-boot-starter-logging-2.2.6.RELEASE.jar:/Users/ilsat/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Users/ilsat/.m2/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Users/ilsat/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.12.1/log4j-to-slf4j-2.12.1.jar:/Users/ilsat/.m2/repository/org/apache/logging/log4j/log4j-api/2.12.1/log4j-api-2.12.1.jar:/Users/ilsat/.m2/repository/org/slf4j/jul-to-slf4j/1.7.30/jul-to-slf4j-1.7.30.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, catalina.useNaming=false, user.timezone=Europe/Moscow, user.country.format=RU, os.name=Mac OS X, java.vm.specification.version=1.8, javax.persistence.validation.mode=AUTO, user.country=US, sun.java.launcher=SUN_STANDARD, sun.boot.library.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib, sun.java.command=com.example.demo.DemoApplication, spring.application.admin.enabled=true, javax.persistence.nonJtaDataSource=HikariDataSource (HikariPool-1), hibernate.transaction.jta.platform=org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform@10947c4e, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, com.sun.management.jmxremote=, javax.persistence.sharedCache.mode=UNSPECIFIED, spring.liveBeansView.mbeanDomain=, sun.cpu.endian=little, user.home=/Users/ilsat, user.language=en, java.specification.vendor=Oracle Corporation, java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre, file.separator=/, spring.output.ansi.enabled=always, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.transaction.coordinator_class=class org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, java.awt.headless=true, sun.boot.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes, hibernate.hbm2ddl.auto=update, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.runtime.version=1.8.0_144-b01, user.name=ilsat, spring.jmx.enabled=true, path.separator=:, os.version=10.14.6, java.endorsed.dirs=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed, java.runtime.name=Java(TM) SE Runtime Environment, file.encoding=UTF-8, hibernate.ejb.persistenceUnitName=default, spring.beaninfo.ignore=true, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, hibernate.show_sql=true, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, java.io.tmpdir=/var/folders/mn/dws3r3v91k7f9wps09vm0ntr0000gn/T/, debug=, catalina.home=/private/var/folders/mn/dws3r3v91k7f9wps09vm0ntr0000gn/T/tomcat.3647663920193233330.8080, java.version=1.8.0_144, hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy, user.dir=/Users/ilsat/myFiles/itis/4 sem/demo3, os.arch=x86_64, java.vm.specification.name=Java Virtual Machine Specification, PID=59753, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, sun.os.patch.level=unknown, catalina.base=/private/var/folders/mn/dws3r3v91k7f9wps09vm0ntr0000gn/T/tomcat.3647663920193233330.8080, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.registry.StandardServiceRegistryBuilder$1@3667faa8, java.library.path=/Users/ilsat/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=25.144-b01, hibernate.bytecode.use_reflection_optimizer=false, java.rmi.server.randomIDs=true, sun.io.unicode.encoding=UnicodeBig, hibernate.archive.scanner=org.hibernate.boot.archive.scan.internal.DisabledScanner, java.ext.dirs=/Users/ilsat/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java, hibernate.connection.datasource=HikariDataSource (HikariPool-1), socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=52.0}
+o.h.v.i.e.r.TraversableResolvers - Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+o.h.v.i.e.r.TraversableResolvers - Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+o.h.v.i.x.c.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+o.h.v.i.x.c.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+o.h.v.i.x.c.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+o.h.v.i.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.models.User] is safe
+o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.models.User
+o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+o.h.internal.SessionFactoryImpl - Instantiated session factory
+o.h.t.spi.TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@43a65cd8] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@558b4942]
+o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.models.User] is safe
+o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.models.User
+o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.example.demo.models.User] is safe
+o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.example.demo.models.User
+o.h.p.e.AbstractEntityPersister - Static SQL for entity: com.example.demo.models.User
+o.h.p.e.AbstractEntityPersister -  Version select: select id from user_info where id =?
+o.h.p.e.AbstractEntityPersister -  Snapshot select: select user_.id, user_.login as login2_0_, user_.password as password3_0_ from user_info user_ where user_.id=?
+o.h.p.e.AbstractEntityPersister -  Insert 0: insert into user_info (login, password, id) values (?, ?, ?)
+o.h.p.e.AbstractEntityPersister -  Update 0: update user_info set login=?, password=? where id=?
+o.h.p.e.AbstractEntityPersister -  Delete 0: delete from user_info where id=?
+o.h.p.e.AbstractEntityPersister -  Identity insert: insert into user_info (login, password) values (?, ?)
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@64763e49]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : login
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : password
+o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.models.User)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.models.User, querySpaceUid=<gen:0>, path=com.example.demo.models.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.models.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+o.h.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.models.User [NONE]: select user0_.id as id1_0_0_, user0_.login as login2_0_0_, user0_.password as password3_0_0_ from user_info user0_ where user0_.id=?
+o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@310b2b6f]
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : login
+o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : password
+o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.example.demo.models.User)
+    - Returns
+       - EntityReturnImpl(entity=com.example.demo.models.User, querySpaceUid=<gen:0>, path=com.example.demo.models.User)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.example.demo.models.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+o.h.loader.entity.plan.EntityLoader - Static select for entity com.example.demo.models.User [READ]: select user0_.id as id1_0_0_, user0_.login as login2_0_0_, user0_.password as password3_0_0_ from user_info user0_ where user0_.id=?
+org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.example.demo.models.User: select user0_.id as id1_0_0_, user0_.login as login2_0_0_, user0_.password as password3_0_0_ from user_info user0_ where user0_.id=?
+org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.example.demo.models.User: select user0_.id as id1_0_0_, user0_.login as login2_0_0_, user0_.password as password3_0_0_ from user_info user0_ where user0_.id=?

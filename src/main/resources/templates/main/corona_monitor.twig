@@ -1,0 +1,27 @@
+{% extends 'base_buttons' %}
+
+{% block block2 %}
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">Страна</th>
+            <th scope="col">Число заболевших</th>
+            <th scope="col">Вылечилось</th>
+            <th scope="col">Критические</th>
+            <th scope="col">Умерли</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for elem in elems %}
+            <tr>
+                <td>{{ elem.countryName }}</td>
+                <td>{{ elem.infected }}</td>
+                <td>{{ elem.cured }}</td>
+                <td>{{ elem.critical }}</td>
+                <td>{{ elem.died }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

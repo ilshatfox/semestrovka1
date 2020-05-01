@@ -1,0 +1,17 @@
+{% extends 'base_buttons' %}
+
+{% block block2 %}
+    <div class="container">
+        <h4 style="text-align: center">Мои заказы:</h4>
+    </div>
+    {% for order in orders %}
+        <div class="container">
+            <a href="/my_orders/order/{{ order.id }}"><h5>Заказ: </h5></a>
+            <ul>
+                <li>Тип: {{ order.orderType }}</li>
+                <li>Количество: {{ order.orderAmount }}</li>
+                <li>Указанный телефон: ******</li>
+            </ul>
+        </div>
+    {% endfor %}
+{% endblock %}

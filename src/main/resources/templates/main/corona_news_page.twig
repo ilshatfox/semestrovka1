@@ -1,0 +1,13 @@
+{% extends 'base_buttons' %}
+
+{% block block2 %}
+    {% for elem in news_list %}
+        {{ elem.name }}
+        {{ elem.text }}
+    {% endfor %}
+{#    <div>{{ news_path }}/{{ elem.filename}}</div>#}
+
+{#    <img src="/news_path/{{ elem.filename}}" alt="альтернативный текст" />#}
+
+
+{% endblock %}

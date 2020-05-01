@@ -1,0 +1,19 @@
+{% extends 'base_buttons' %}
+
+{% block block2 %}
+    <div class="container">
+        <h4 style="text-align: center">Заказ:</h4>
+    </div>
+    <div class="container">
+        <h5>Заказ: </h5>
+        <ul>
+            <li>Тип: {{ order.orderType }}</li>
+            <li>Количество: {{ order.orderAmount }}</li>
+            <li>Указанный телефон: {{ order.phone }}</li>
+        </ul>
+        <a href="/my_orders/edit/{{ order.id }}"><button class="btn btn-dark">Изменить</button></a>
+        <form action="/my_orders/delete_order/{{ order.id }}" method="post">
+            <button type="submit" class="btn btn-dark">Удалить</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'auth/base_sign_in_up' %}
+
+{% block block2 %}
+{#    <form action="/auth/signIn" method="post">#}
+{#        <input name="email">#}
+{#        <input name="password">#}
+{#        <input type="submit">#}
+{#    </form>#}
+    <div class="container">
+        <form action="/auth/signIn" method="post">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Емаил: </label>
+                <input class="form-control" id="exampleInputEmail1" type="email" name="email" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Пароль: </label>
+                <input class="form-control" id="exampleInputPassword1" name="password" type="password">
+            </div>
+            <button type="submit" class="btn btn-dark">Войти</button>
+            <a href="/auth/signUp">Еще нет учетной записи(зарегистрироваться)?</a>
+        </form>
+    </div>
+
+
+
+{% endblock %}

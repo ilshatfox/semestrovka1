@@ -1,0 +1,47 @@
+{% extends 'base_buttons' %}
+
+{% block block2 %}
+    <div class="container">
+        <h4 style="text-align: center">Заказ:</h4>
+    </div>
+    <div class="container">
+        <form action="/my_orders/edit/{{ order.id }}" method="post" id="buy_form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Ваш телефон: </label>
+                <input class="form-control" id="exampleInputEmail1" name="phone" value="{{ order.phone }}" placeholder="Введите телефон(только цифры)">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Количество людей проходящих тест: </label>
+                <input class="form-control" id="exampleInputPassword1" name="amount" value="{{ order.orderAmount }}">
+            </div>
+            <button type="button" class="btn btn-dark" id="click_button" onclick="myFunc();">Отправить</button>
+        </form>
+{#        <h5>Заказ: </h5>#}
+{#        <ul>#}
+{#            #}
+{#            <li>Тип: {{ order.orderType }}</li>#}
+{#            <li>Количество: {{ order.orderAmount }}</li>#}
+{#            <li>Указанный телефон: {{ order.phone }}</li>#}
+{#        </ul>#}
+{#        <a href=""><button class="btn btn-dark">Изменить</button></a>#}
+{#        <form action="/my_orders/delete_order/{{ order.id }}" method="post">#}
+{#            <button type="submit" class="btn btn-dark">Удалить</button>#}
+{#        </form>#}
+    </div>
+    <script>
+        function myFunc() {
+            // alert("ff");
+            var elem = document.getElementById("exampleInputEmail1");
+            var buy_form = document.getElementById("buy_form");
+            // alert(!isNaN(elem.phone));
+            // alert(elem.value.length == 11);
+            if (!isNaN(elem.value) && elem.value.length == 11) {
+                // alert("получилось!");
+                buy_form.submit();
+            } else {
+                alert("Введенный телефон некорректный! Вводите только цифры, без лишних знаков");
+
+            }
+        }
+    </script>
+{% endblock %}
